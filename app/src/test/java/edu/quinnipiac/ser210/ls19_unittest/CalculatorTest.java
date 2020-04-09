@@ -6,36 +6,34 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
- * Created by relkharboutly on 3/16/2018.
+ * Created by relkharboutly on 4/3/2018.
  */
 public class CalculatorTest {
-    private Calculator mCaclulator;
-
+    private Calculator mCalculator;
     @Before
     public void setUp() throws Exception {
-        mCaclulator = new Calculator();
+        mCalculator = new Calculator();
     }
 
     @Test
     public void sum() throws Exception {
-        assertEquals(mCaclulator.sum(1,5),6, 0);
+        assertEquals(6, mCalculator.sum(5,1),0);
     }
 
     @Test
     public void subtract() throws Exception {
-        assertEquals(mCaclulator.subtract(5,1),4, 0);
-
+        assertEquals(1,mCalculator.subtract(5,4),0);
     }
 
     @Test
     public void divide() throws Exception {
-        assertEquals(mCaclulator.divide(10,5),0, 0);
+        assertEquals(5,mCalculator.divide(20,4),0);
 
     }
 
     @Test
     public void multiply() throws Exception {
-        assertEquals(mCaclulator.multiply(2,5),10, 0);
+        assertEquals(20,mCalculator.multiply(5,4),0);
 
     }
 
